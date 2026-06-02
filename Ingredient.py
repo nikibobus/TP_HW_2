@@ -19,4 +19,3 @@ class Ingredient:
         if self.name == another.name and self.unit == another.unit:
             return True
         return False
-    
