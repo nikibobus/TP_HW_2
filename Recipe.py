@@ -1,7 +1,11 @@
+from Ingredient import Ingredient
 class Recipe:
     def __init__(self, title, ingredients=None):
         self.title = title
-        self.ingredients = ingredients
+        if ingredients is not None:
+            self.ingredients = ingredients
+        else:
+            self.ingredients = []
     def add_ingredient(self, ingredient: Ingredient):
         self.ingredients.append(ingredient)
     @staticmethod
