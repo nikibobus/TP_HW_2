@@ -1,3 +1,5 @@
+from Ingredient import Ingredient
+from Recipe import Recipe
 class ShoppingList:
     def __init__(self):
         self._items = []
